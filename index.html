@@ -1,144 +1,138 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>NFT Preview Card</title>
 
     <!-- Google Font: Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <main class="card">
+      <!-- NFT Image and Hover Overlay -->
+      <div class="card__images">
+        <img
+          class="card__image"
+          src="./assets/image-equilibrium.jpg"
+          alt="Colorful geometric cube representing Equilibrium NFT"
+        />
 
-        <!-- NFT Image and Hover Overlay -->
-        <div class="card__images">
-            <img
-                class="card__image"
-                src="./assets/image-equilibrium.jpg"
-                alt="Colorful geometric cube representing Equilibrium NFT"
-            >
+        <a
+          class="card__images-layer"
+          href="#nft-details"
+          aria-label="View Equilibrium NFT details"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </a>
+      </div>
 
-            <a
-                class="card__images-layer"
-                href="#nft-details"
-                aria-label="View Equilibrium NFT details"
+      <!-- NFT Details -->
+      <section class="card__content" id="nft-details">
+        <h1 class="card__title">
+          <a href="#nft-details">Equilibrium #3429</a>
+        </h1>
+
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="card__time">
+          <div class="card__time-left">
+            <svg
+              class="ethereum-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="20"
+              viewBox="0 0 12 20"
+              aria-hidden="true"
             >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="48"
-                    height="48"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                >
-                    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-            </a>
+              <path fill="currentColor" d="M6 0 0 10l6 3.6L12 10 6 0Z"></path>
+              <path
+                fill="currentColor"
+                opacity=".65"
+                d="M0 11.2 6 20l6-8.8-6 3.6-6-3.6Z"
+              ></path>
+            </svg>
+            <span>0.041 ETH</span>
+          </div>
+
+          <div class="card__time-right">
+            <svg
+              class="clock-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path
+                d="M12 6v6l4 2"
+                fill="none"
+                stroke="#15263f"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <span>3 days left.</span>
+          </div>
         </div>
 
-        <!-- NFT Details -->
-        <section class="card__content" id="nft-details">
-
-            <h1 class="card__title">
-                <a href="#nft-details">Equilibrium #3429</a>
-            </h1>
-
-            <p class="card__description">
-                Our Equilibrium collection promotes balance and calm.
-            </p>
-
-            <!-- Price and Time Information -->
-            <div class="card__time">
-
-                <div class="card__time-left">
-                    <svg
-                        class="ethereum-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="20"
-                        viewBox="0 0 12 20"
-                        aria-hidden="true"
-                    >
-                        <path fill="currentColor" d="M6 0 0 10l6 3.6L12 10 6 0Z"></path>
-                        <path fill="currentColor" opacity=".65" d="M0 11.2 6 20l6-8.8-6 3.6-6-3.6Z"></path>
-                    </svg>
-
-                    <span>0.041 ETH</span>
-                </div>
-
-                <div class="card__time-right">
-                    <svg
-                        class="clock-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        aria-hidden="true"
-                    >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path
-                            d="M12 6v6l4 2"
-                            fill="none"
-                            stroke="#15263f"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        ></path>
-                    </svg>
-
-                    <span>3 days left.</span>
-                </div>
-
-            </div>
-
-            <!-- Creator Information -->
-            <div class="card__creator">
-
-                <img
-                    class="card__creator-image"
-                    src="./assets/logo.jpeg"
-                    alt="Creator profile picture"
-                >
-
-                <p>
-                    <span class="creator-label">Creation of </span>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                        Ketan Makode
-                    </a>
-                </p>
-
-            </div>
-
-        </section>
-
+        <div class="card__creator">
+          <img
+            class="card__creator-image"
+            src="./assets/logo.jpeg"
+            alt="Creator profile picture"
+          />
+          <p>
+            <span class="creator-label">Creation of </span>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ketan Makode
+            </a>
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- Attribution Footer -->
-    <footer class="attribution">
-        Challenge by
-        <a href="https://www.crio.do" target="_blank" rel="noopener noreferrer">
-            Crio.Do
-        </a>.
-        Coded by
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-            Ketan Makode
-        </a>.
-    </footer>
 
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.crio.do" target="_blank" rel="noopener"> Crio.Do </a
+      >. Coded by
+      <a href="https://github.com/KetanMakode" target="_blank" rel="noopener">
+        Ketan Makode </a
+      >.
+    </footer>
+  </body>
 </html>
